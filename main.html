@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Scientific Calculator v2</title>
+
+<link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+
+<button class="theme" onclick="toggleTheme()">🌙</button>
+
+<div class="calculator">
+
+<div class="display">
+<div id="previous"></div>
+<div id="current">0</div>
+</div>
+
+<div class="buttons">
+
+<button class="sci" onclick="appendFunction('Math.sin')">sin</button>
+<button class="sci" onclick="appendFunction('Math.cos')">cos</button>
+<button class="sci" onclick="appendFunction('Math.tan')">tan</button>
+<button class="sci" onclick="appendConstant('Math.PI')">π</button>
+<button class="clear" onclick="allClear()">AC</button>
+
+<button class="sci" onclick="appendFunction('Math.log10')">log</button>
+<button class="sci" onclick="appendFunction('Math.log')">ln</button>
+<button class="sci" onclick="appendFunction('Math.sqrt')">√</button>
+<button class="sci" onclick="appendOperator('**')">xʸ</button>
+<button class="clear" onclick="backspace()">DEL</button>
+
+<button class="num" onclick="appendNumber('7')">7</button>
+<button class="num" onclick="appendNumber('8')">8</button>
+<button class="num" onclick="appendNumber('9')">9</button>
+<button class="op" onclick="appendOperator('/')">÷</button>
+<button class="sci" onclick="appendFunction('Math.exp')">eˣ</button>
+
+<button class="num" onclick="appendNumber('4')">4</button>
+<button class="num" onclick="appendNumber('5')">5</button>
+<button class="num" onclick="appendNumber('6')">6</button>
+<button class="op" onclick="appendOperator('*')">×</button>
+<button class="sci" onclick="appendOperator('**2')">x²</button>
+
+<button class="num" onclick="appendNumber('1')">1</button>
+<button class="num" onclick="appendNumber('2')">2</button>
+<button class="num" onclick="appendNumber('3')">3</button>
+<button class="op" onclick="appendOperator('-')">-</button>
+<button class="op" onclick="appendOperator('%')">%</button>
+
+<button class="num" onclick="appendNumber('0')">0</button>
+<button class="num" onclick="appendNumber('.')">.</button>
+<button class="op" onclick="appendOperator('+')">+</button>
+<button class="equal" onclick="calculate()">=</button>
+
+</div>
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
